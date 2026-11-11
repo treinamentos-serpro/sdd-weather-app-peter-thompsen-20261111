@@ -100,6 +100,14 @@ Decisões-chave:
 - **Rede isolada** em `services/` — componentes e hooks não conhecem URLs.
 - Sempre tratar **loading**, **erro** e **vazio**.
 
+Para desenvolver a interface sem a API, importe `mockWeatherData` de
+`src/mocks/weatherData.ts`. O exemplo fixo contém São Paulo, o clima atual e
+cinco datas de previsão; não representa condições reais ou atualizadas.
+Com `pnpm dev`, a busca consulta a Open-Meteo diretamente e exibe o clima da
+primeira cidade retornada. O provedor recebe o endereço IP e a cidade ou suas
+coordenadas. A seleção explícita de cidade e a mediação pelo backend permanecem
+no fluxo de produto planejado.
+
 ---
 
 ## Stack
